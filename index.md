@@ -1,6 +1,6 @@
 ---
 title: "Teoria do Conhecimento e dos Espaços Construídos"
-subtitle: "PPG–FAU–UnB 1.º/2021"
+subtitle: "PPGFAU–UnB 1.º/2021"
 author: "Professor: Pedro P. Palazzo"
 lang: pt-BR
 layout: index
