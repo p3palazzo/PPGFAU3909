@@ -1,0 +1,82 @@
+# General
+title: Teoria do Conhecimento e dos Espaços Construídos
+author: Pedro P. Palazzo
+email: palazzo@unb.br
+description: >-
+  Teoria do espaço construído como desdobramento e especificação da
+  teoria social. Espaço e sua produção a luz dos paradigmas de
+  conhecimento contemporâneos, os conceitos de planejamento e de projeto
+  do espaço: processos, características e tipos.
+baseurl: "/tcec"
+url: "https://palazzo.arq.br"
+lang: pt-BR
+
+# Theme
+theme: tufte-pandoc-jekyll
+
+# Content
+header_includes:
+  - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  - <link rel="stylesheet" href="https://use.fontawesome.com/9303e96850.css">
+
+# Collections
+collections:
+  aula:
+    output: true
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: page
+
+# Processing
+markdown: Pandoc
+pandoc:
+  extensions:
+    - defaults: "_spec/html.yaml"
+    - section-divs
+permalink: pretty
+readme_index:
+  enabled         : true
+  remove_originals: true
+  with_frontmatter: true
+relative_links:
+  enabled         : true
+  collections     : true
+sass_dir:
+  load_paths:
+    - _sass
+    - assets
+    - assets/css
+    - assets/css-slides
+    - reveal.js/css/theme/template
+scholar:
+  locale                 : pt-BR
+  style                  : "chicago-fullnote-bibliography-with-ibid"
+timezone: America/Sao_Paulo
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-pandoc
+  - jekyll-relative-links
+  - jekyll-scholar
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Keep and Exclude
+exclude:
+  - LICENSE
+  - Makefile
+  - reveal.js
+  - "default.*"
+  - "*.fdb_latexmk"
+  - "*.run.xml"
+keep_files:
+  - .git
+  - slides
+  - reveal.js
