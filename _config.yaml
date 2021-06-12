@@ -1,0 +1,84 @@
+# Content {{{1
+# General {{{2
+title: Teoria do Conhecimento e dos Espaços Construídos
+author: Pedro P. Palazzo
+email: palazzo@unb.br
+description: >-
+  Teoria do espaço construído como desdobramento e especificação da
+  teoria social. Espaço e sua produção a luz dos paradigmas de
+  conhecimento contemporâneos, os conceitos de planejamento e de projeto
+  do espaço: processos, características e tipos.
+baseurl: "/tcec"
+url: "https://palazzo.arq.br"
+lang: pt-BR
+
+# Collections {{{2
+collections:
+  aula:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: page
+
+# Build settings {{{1
+# Theme {{{2
+theme: tufte-pandoc-jekyll
+minima:
+  date_format : "%e %B %Y"
+  social_links:
+    twitter   : p3palazzo
+    github    : p3palazzo
+    instagram : arqtrad
+
+# Build parameters {{{2
+markdown: Pandoc
+pandoc:
+  extensions:
+    - defaults: "_spec/html.yaml"
+    - section-divs
+#permalink: pretty
+readme_index:
+  enabled         : true
+  remove_originals: true
+  with_frontmatter: true
+relative_links:
+  enabled         : true
+  collections     : true
+sass_dir:
+  load_paths:
+    - _sass
+    - assets
+    - assets/css
+    - assets/css-slides
+    - reveal.js/css/theme/template
+timezone: America/Sao_Paulo
+
+# Plugins {{{1
+plugins:
+  - jekyll-feed
+  - jekyll-pandoc
+  - jekyll-scholar
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  # The following plugins are always used by GH-Pages
+  - jekyll-coffeescript
+  - jekyll-paginate
+  - jekyll-relative-links
+
+# Keep and Exclude {{{1
+exclude:
+  - LICENSE
+  - Makefile
+  - reveal.js
+  - "default.*"
+  - "*.fdb_latexmk"
+  - "*.run.xml"
+keep_files:
+  - .git
+  - slides
+  - reveal.js
+# vim: set foldmethod=marker :
