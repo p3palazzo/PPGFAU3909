@@ -6,15 +6,15 @@ lang: pt-BR
 layout: index
 nocite: "@*"
 suppress-bibliography: false
-bibliography: _bibliography/references.bib
+classoption:
+  - headsepline
+  - footsepline
+abstract: >
+  Teoria do espaço construído como desdobramento e especificação da
+  teoria social. Espaço e sua produção a luz dos paradigmas de
+  conhecimento contemporâneos, os conceitos de planejamento e de projeto
+  do espaço: processos, características e tipos.
 ---
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: epigraph
-> Teoria do espaço construído como desdobramento e especificação da
-> teoria social. Espaço e sua produção a luz dos paradigmas de
-> conhecimento contemporâneos, os conceitos de planejamento e de projeto
-> do espaço: processos, características e tipos.
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 # Programa #
 
