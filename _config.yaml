@@ -73,11 +73,8 @@ plugins:
 exclude:
   - LICENSE
   - Makefile
-  - reveal.js
-  - "default.*"
+  - README.md
   - "*.fdb_latexmk"
   - "*.run.xml"
 keep_files:
   - .git
-  - slides
-  - reveal.js

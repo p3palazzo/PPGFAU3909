@@ -5,7 +5,7 @@
 	path = _sass
 	url = https://gist.github.com/4e80bf692e3b0cd64c9b32e57980eb39.git
 [submodule "reveal.js"]
-	path = reveal.js
+	path = slides/reveal.js
 	url = https://github.com/hakimel/reveal.js
 [submodule "assets/css-slides"]
 	path = assets/css-slides
