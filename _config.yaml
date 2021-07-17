@@ -36,6 +36,7 @@ defaults:
 markdown: Pandoc
 pandoc:
   extensions:
+    - csl: "https://raw.githubusercontent.com/citation-style-language/styles/master/chicago-note-bibliography-with-ibid.csl"
     - defaults: "_spec/html.yaml"
     - section-divs
 permalink: pretty

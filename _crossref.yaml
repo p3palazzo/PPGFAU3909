@@ -1,0 +1,5 @@
+ccsLabelSep: "&nbsp;&ndash;&nbsp;"
+figureTitle: Figura
+tableTitle: Tabela
+tblPrefix: tabela
+subfigureRefIndexTemplate: $$i$$$$suf$$ $$s$$
