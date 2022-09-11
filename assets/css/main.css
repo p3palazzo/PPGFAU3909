@@ -133,19 +133,15 @@ code { font-size: 1.05rem; }
 /* To get spacing between lists, use paragraphs. 0.25rem of spacing between list elements looks bad. */
 li:not(:first-child) { margin-top: initial; }
 
-/* Make "Home" link small */
-p.signoff { font-size: 1.2rem; }
+/* Prevent superscripts and subscripts from affecting line-height */
+sup, sub { vertical-align: baseline; position: relative; top: -0.4em; }
 
-body { max-width: 1150px; }
+sub { top: 0.4em; }
 
-/** Makes it so that top-level <p> don't need to be wrapped in <section> */
-article > p, article > li, article > footer, article > table { width: 55%; }
+/* Replicate styling from sidenote numbers to footnote numbers */
+a.footnote-ref { background: unset; text-shadow: unset; font-size: 1rem; position: relative; top: -0.1rem; left: 0.1rem; display: inline; }
 
-/* Enable hyphens on supported platforms */
-article { -webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; }
-
-/* Sidenotes end up with a bunch of hyphens because they're so small */
-.sidenote, .marginnote, figcaption, .subfigures > p:last-of-type, .subfigures.fullwidth > p:last-of-type, .iframe-wrapper > p:last-of-type, .iframe-wrapper.fullwidth > p:last-of-type { hyphens: none; }
+.footnote-ref sup { font-family: et-book-roman-old-style; font-size: inherit; vertical-align: inherit; line-height: inherit; }
 
 /* For smart quotes */
 q { quotes: "“" "”" "‘" "’"; }
@@ -187,6 +183,23 @@ div.sourceCode, pre:not(.sourceCode) { padding: 1.4rem; margin: -0.7rem -1.4rem;
 
 /* Wrap long URLs in references */
 #refs a { word-wrap: break-word; overflow-wrap: break-word; }
+
+/* To get the pandoc-generated bibliography to match style, define csl classes. */
+div.csl-bib-body { width: 55%; }
+
+div.csl-entry { clear: both; margin-top: .5rem; }
+
+.hanging div.csl-entry { margin-left: 2rem; text-indent: -2rem; }
+
+div.csl-left-margin { min-width: 2rem; float: left; }
+
+div.csl-right-inline { margin-left: 2rem; padding-left: 1rem; }
+
+div.csl-indent { margin-left: 2rem; }
+
+div.hanging-indent { margin-left: 1.5rem; text-indent: -1.5rem; }
+
+@media (max-width: 760px) { div.csl-bib-body { width: 100%; } }
 
 div.sourceCode, pre:not(.sourceCode) { background: #FDF6E3; }
 
