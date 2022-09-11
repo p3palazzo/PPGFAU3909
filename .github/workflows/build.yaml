@@ -20,7 +20,7 @@ jobs:
   commit:
     runs-on: ubuntu-latest
     needs: [ build ]
-    if: github.event_name == 'push' && github.repository == 'p3palazzo/tcec'
+    if: github.event_name == 'push' && github.repository == 'p3palazzo/PPGFAU3909'
     env:
       commit_message: ${{ github.event.head_commit.message }}
     steps:
